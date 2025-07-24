@@ -1,0 +1,14 @@
+{
+  "name": "valext",
+  "version": "0.0.1",
+  "sideEffects": true,
+  "description": "Minimal extraction and validation helper for Valibot.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jonny Gamba",
+  "license": "ISC",
+  "packageManager": "pnpm@10.13.1"
+}
