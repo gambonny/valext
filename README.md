@@ -36,7 +36,7 @@ const result = extract(schema).from(input, issues => {
 
 - ✅ Reads like a sentence: `extract(...).from(...)`
 - ✅ Logs **flattened** issues automatically via callback
-- ✅ Makes routes easier to scan, reason about, and debug
+- ✅ Reduces boilerplate and improves readability at the point of validation
 
 ---
 
