@@ -115,8 +115,6 @@ Exactly like `valibot.parse()`. Will throw if input is invalid.
 
 > **Reminder:** `valext` is not an abstraction layer —  it’s a tool for making your intent clear at the point of use.
 
----
-
 ## License
 
 [MIT](./LICENSE)
