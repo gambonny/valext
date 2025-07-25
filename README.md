@@ -6,7 +6,7 @@
 
 `valibot.safeParse()` works — but it’s not very intuitive.  
 It leads to very procedural code, where you manually handle control flow and flatten errors — a common task when logging structural data for observability.
-It doesn’t read like intent — it reads like plumbing.
+It reads like plumbing — not like intent.
 
 ```ts
 ...
@@ -34,13 +34,9 @@ const result = extract(schema).from(input, issues => {
 })
 ```
 
-Reads like a sentence: extract(...).from(...)
-
-Logs flattened issues automatically via callback
-
-Makes your routes easier to scan, reason about, and debug
-
-Want full control? You can always drop back to `safeParse()` or `parse()` — valext doesn’t hide the schema or make magic decisions for you.
+- ✅ Reads like a sentence: `extract(...).from(...)`
+- ✅ Logs **flattened** issues automatically via callback
+- ✅ Makes routes easier to scan, reason about, and debug
 
 ---
 
