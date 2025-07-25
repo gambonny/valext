@@ -3,10 +3,12 @@
   "version": "0.0.1",
   "sideEffects": true,
   "description": "Minimal extraction and validation helper for Valibot.",
+  "type": "module",
   "main": "src/index.ts",
   "scripts": {
     "format": "pnpm exec biome format --write",
     "lint": "pnpm exec biome lint",
+    "build": "tsdown",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,6 +18,7 @@
   "devDependencies": {
     "@biomejs/biome": "2.1.2",
     "lefthook": "^1.12.2",
+    "tsdown": "^0.13.0",
     "typescript": "^5.8.3",
     "valibot": "^1.1.0"
   },
