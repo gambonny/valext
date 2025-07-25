@@ -4,16 +4,43 @@
 
 <br />
 
-Cloudflare Workers, Hono, and other runtime environments benefit from **explicit contracts** and **clear validation flows**.
-But `valibot.safeParse()` gives you nested boilerplate, and parsing logic often gets duplicated or abstracted too deeply.
-
-`valext` embraces a simple idea:
-
-### ✨ Extract values with structure and intent, without hiding what matters.
+`valibot.safeParse()` works — but it’s not very intuitive.  
+It leads to very procedural code, where you manually handle control flow and flatten errors — a common task when logging structural data for observability.
+It doesn’t read like intent — it reads like plumbing.
 
 ```ts
-  const result = extract(schema).from(unknownValue, issues => console.warn(issues))
+...
+import { safeParse, flatten } from 'valibot'
+
+const result = safeParse(schema, input)
+
+if (!result.success) {
+  const issues = flatten(result.issues).nested
+  logger.warn('validation failed', { issues })
+}
 ```
+
+This boilerplate is everywhere, and it hides your intent behind ceremony.
+
+`valext` introduces a small shift:
+
+### ✨ Extract values fluently — and express what you mean.
+```ts
+...
+import { extract } from '@gambonny/valext'
+
+const result = extract(schema).from(input, issues => {
+  logger.warn('validation failed', { issues })
+})
+```
+
+Reads like a sentence: extract(...).from(...)
+
+Logs flattened issues automatically via callback
+
+Makes your routes easier to scan, reason about, and debug
+
+Want full control? You can always drop back to `safeParse()` or `parse()` — valext doesn’t hide the schema or make magic decisions for you.
 
 ---
 
@@ -24,11 +51,6 @@ But `valibot.safeParse()` gives you nested boilerplate, and parsing logic often 
 ```
 
 ---
-
-## Why `valext`?
-
----
-
 
 ## Example in Hono
 
