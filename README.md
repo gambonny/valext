@@ -34,9 +34,9 @@ const result = extract(schema).from(input, issues => {
 })
 ```
 
-- ✅ Reads like a sentence: `extract(...).from(...)`
-- ✅ Logs **flattened** issues automatically via callback
-- ✅ Reduces boilerplate and improves readability at the point of validation
+- ✅ Fluent API that reads like intent — `extract(...).from(...)`
+- ✅ Ergonomic structure for validation — no verbose branching or manual flattening
+- ✅ Structured error handling — pass a callback to receive flattened issues
 
 ---
 
