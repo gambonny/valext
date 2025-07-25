@@ -9,6 +9,7 @@
     "format": "pnpm exec biome format --write",
     "lint": "pnpm exec biome lint",
     "build": "tsdown",
+    "typecheck": "tsc --noEmit",
     "test": "vitest"
   },
   "keywords": [],
