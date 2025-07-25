@@ -1,3 +1,3 @@
-export function greet(name: string) {
-  return `Hello, ${name}`
-}
+export { extract } from "@/extract"
+
+export type { ExtractResult, OnValidationError } from "@/extract"
