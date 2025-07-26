@@ -53,12 +53,12 @@ const result = extract(schema).from(input, issues => {
 ```ts
 import { validator } from 'hono/validator'
 import { extract } from '@gambonny/valext'
-import { signupSchema } from './schemas'
+import { credentials } from './schemas'
 
 app.post(
   '/signup',
   validator('json', async (body, c) => {
-    const { success, output } = extract(signupSchema).from(body, issues =>
+    const { success, output } = extract(credentials).from(body, issues =>
       c.var.logger.warn('validation failed', { issues }),
     )
 
