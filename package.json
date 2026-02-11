@@ -1,7 +1,7 @@
 {
   "name": "@gambonny/valext",
   "author": "Jonny Gamba",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "sideEffects": true,
   "description": "Minimal extraction and validation helper for Valibot.",
   "type": "module",
@@ -26,18 +26,18 @@
     "fluent-api",
     "runtime-validation"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "packageManager": "pnpm@10.13.1",
   "devDependencies": {
     "@biomejs/biome": "2.1.2",
     "lefthook": "^1.12.2",
     "tsdown": "^0.13.0",
     "typescript": "^5.8.3",
-    "valibot": "^1.1.0",
+    "valibot": "^1.2.0",
     "vitest": "^3.2.4"
   },
   "peerDependencies": {
-    "valibot": "^1.1.0"
+    "valibot": "^1.2.0"
   },
   "files": [
     "dist"
