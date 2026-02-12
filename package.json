@@ -1,7 +1,7 @@
 {
   "name": "@gambonny/valext",
   "author": "Jonny Gamba",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "sideEffects": false,
   "description": "Minimal extraction and validation helper for Valibot.",
   "type": "module",
