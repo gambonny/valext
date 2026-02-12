@@ -21,8 +21,8 @@ importers:
         specifier: ^5.8.3
         version: 5.8.3
       valibot:
-        specifier: ^1.1.0
-        version: 1.1.0(typescript@5.8.3)
+        specifier: ^1.2.0
+        version: 1.2.0(typescript@5.8.3)
       vitest:
         specifier: ^3.2.4
         version: 3.2.4(jiti@2.5.1)
@@ -819,8 +819,8 @@ packages:
   unconfig@7.3.2:
     resolution: {integrity: sha512-nqG5NNL2wFVGZ0NA/aCFw0oJ2pxSf1lwg4Z5ill8wd7K4KX/rQbHlwbh+bjctXL5Ly1xtzHenHGOK0b+lG6JVg==}
 
-  valibot@1.1.0:
-    resolution: {integrity: sha512-Nk8lX30Qhu+9txPYTwM0cFlWLdPFsFr6LblzqIySfbZph9+BFsAHsNvHOymEviUepeIW6KFHzpX8TKhbptBXXw==}
+  valibot@1.2.0:
+    resolution: {integrity: sha512-mm1rxUsmOxzrwnX5arGS+U4T25RdvpPjPN4yR0u9pUBov9+zGVtO84tif1eY4r6zWxVxu3KzIyknJy3rxfRZZg==}
     peerDependencies:
       typescript: '>=5'
     peerDependenciesMeta:
@@ -1548,7 +1548,7 @@ snapshots:
       jiti: 2.5.1
       quansync: 0.2.10
 
-  valibot@1.1.0(typescript@5.8.3):
+  valibot@1.2.0(typescript@5.8.3):
     optionalDependencies:
       typescript: 5.8.3
 
